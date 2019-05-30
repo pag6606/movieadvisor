@@ -55,6 +55,8 @@ public class FilmService {
 
     public Collection<Film> findByTitleContains(String title){
         return filmQueryService.titleContains(title).exec();
+
+
     }
 
 }
