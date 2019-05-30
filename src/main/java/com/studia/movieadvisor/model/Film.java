@@ -16,7 +16,7 @@ public class Film {
         this.year = year;
     }
 
-    private List<String> generes;
+    private List<String> genres;
 
     public long getId() {
         return id;
@@ -34,12 +34,12 @@ public class Film {
         this.title = title;
     }
 
-    public List<String> getGeneres() {
-        return generes;
+    public List<String> getGenres() {
+        return genres;
     }
 
-    public void setGeneres(List<String> generes) {
-        this.generes = generes;
+    public void setGenres(List<String> genres) {
+        this.genres = genres;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Film {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", year='" + year + '\'' +
-                ", generes=" + generes +
+                ", generes=" + genres +
                 '}';
     }
 
@@ -59,7 +59,7 @@ public class Film {
         this.id = id;
         this.title = title;
         this.year = year;
-        this.generes = generes;
+        this.genres = generes;
     }
 
 }
