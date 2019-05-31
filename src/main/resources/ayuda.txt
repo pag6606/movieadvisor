@@ -1,0 +1,22 @@
+Sintaxis: java -jar movieadvisor.jar [OPCIONES]
+
+    -lg
+    Lista los diferentes géneros de las películas de la colección.
+    No se pueden utilizar mas parámetros
+
+    -ag genero1,genero2, genero n
+    Lista aquiellas películas que pertenecen a al menos uno de los
+    géneros que se indican. El listado de géneros no debe incluir espacios
+
+    -tg genero1,genero2, genero n
+    Lista aquellas películas que pertenecen a todos y cada unos de los
+    géneros que se indican. El listado de géneros no puede incluir espacios.
+
+    -y año
+    Lista aquiellas películas que se estrenaron en el año indicado. El año debe
+    expresarse en 4 cifras
+
+    -b desde, hasta
+    Lista aquellas películas que se estrenaron entre los años Desde y Hasta.
+    Los años indicados están incluidos. Debe expresarse con 4 cifras.
+

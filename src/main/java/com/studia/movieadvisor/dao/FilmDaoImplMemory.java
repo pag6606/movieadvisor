@@ -5,6 +5,7 @@ import com.studia.movieadvisor.model.Film;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -18,6 +19,7 @@ public class FilmDaoImplMemory implements  FilmDao {
     @Autowired
     private AppConfig config;
 
+    @PostConstruct
     public void init(){
         //crear peliculas de memoria
         peliculas = UtilFilmReader.readFile(config.getFile(),config.getSeparator(), config.getListSeparator());
